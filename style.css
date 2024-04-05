@@ -3,3 +3,14 @@
     margin: 1em;
     text-align: center;
 }
+.midContainer{
+    border: solid yellow;
+    margin: 1em;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+.dog1,.dog2,.versus{
+    border: solid red;
+
+}
