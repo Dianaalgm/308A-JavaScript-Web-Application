@@ -3,14 +3,30 @@
     margin: 1em;
     text-align: center;
 }
-.midContainer{
+.middleContainer{
     border: solid yellow;
     margin: 1em;
-    height: 40vh;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cat1,.cat2{
+    border: solid red;
+    text-align: center;
+    width: 40%;
+    /* height: 40vh;
+    width:auto;
+    display: flex;
+    justify-content: space-around; */
+}
+.bttnContainer{
+    border: solid green;
+    display: flex;
+    justify-content: space-evenly;
+}
+.scoreBoard{
+    border: solid orange;
     display: flex;
     justify-content: space-around;
-}
-.dog1,.dog2,.versus{
-    border: solid red;
-
+    margin: 1em;
 }
