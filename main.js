@@ -1,13 +1,30 @@
 //module that is linked to HTML
-// Main File for Classes and Functions 
+// Main File for Classes and Functions/imports
 
-document.getElementById("start").addEventListener("click", testRequest);
+// document.getElementById("start").addEventListener("click", testRequest);
 
-let leftCatScore = 0;
-let rightCatScore = 0;
+let catScore = 0;
+let catPoints = document.querySelector(".score1");
+catPoints.innerHTML = catScore;
 
-let cat1Points = document.querySelector(".c1");
-let cat2Points = document.querySelector(".d1");
+import {getData} from './main2.mjs'
 
-cat1Points.innerHTML = leftCatScorecatScore;
-cat2Points.innerHTML = rightCatScore;
+
+// const apiKey = 'live_qS7GR3qeWj6V8lcQ78sUbaYZXADdnKfkq5EEBbUikyOBKgFjLUAGnANPUQolQnBk'
+// const url = `https://api.thecatapi.com/v1/images/search?api_key=${apiKey}`;
+
+// async function getData(){
+//   try{
+//   const response = await fetch (url);
+//   if (!response.ok) {
+//     throw new Error ("Network response was not ok");
+//   }
+//   const data = await response.json();
+//   // console.log(data)
+//   const catImage = document.getElementById("cat");
+//   catImage.src = data[0].url ;
+//   catImage.alt = "Cat";
+// }catch(error){
+//   console.error("Error fetching cat image", error);
+// }
+
