@@ -7,8 +7,31 @@ let catScore = 0;
 let catPoints = document.querySelector(".score1");
 catPoints.innerHTML = catScore;
 
-import {getData} from './main2.mjs'
+// Event listener for the "Cute!" button
+document.getElementById("cute").addEventListener("click", () => {
+  // Increment cat score
+  catScore++;
+  // Update cat score display
+  catPoints.innerHTML = catScore;
+  // Fetch and display a new random cat image
+  getData();
+});
 
+// Event listener for the "Not so cute" button
+document.getElementById("not").addEventListener("click", () => {
+  // Fetch and display a new random cat image
+  changeCatImage();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const notButton = document.querySelector(".not");
+  notButton.addEventListener("click", () => {
+      changeCatImage();
+  });
+});
+
+import {getData} from './main2.mjs'
+import { changeCatImage } from './data.mjs';
 
 // const apiKey = 'live_qS7GR3qeWj6V8lcQ78sUbaYZXADdnKfkq5EEBbUikyOBKgFjLUAGnANPUQolQnBk'
 // const url = `https://api.thecatapi.com/v1/images/search?api_key=${apiKey}`;
